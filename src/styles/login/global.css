@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button-01 {
+    display: flex;
+    border: none;
+    background-color: #2b565d;
+    color: white;
+    border-radius: 100px;
+    width: 100;
+    padding: 15px 100px ;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .3s ease;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.button-01:hover {
+    background-color: #113740;
+    
+}
+
