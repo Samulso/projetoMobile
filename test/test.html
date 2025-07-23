@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configurações</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="test.css">
+</head>
+<body>
+
+  
+
+
+
+            <button class="button-02" id="open-edit-profile-modal">
+                <h3>Agendar</h3>
+            </button>
+
+  <div id="editProfileModal" class="modal">
+    <div class="modal-content">
+        <span class="modal-close-btn">&times;</span>
+        <h2>Dados da Conta</h2>
+
+
+        <label for="nome-modal">Nome Completo</label>
+        <input type="text" id="nome-modal" placeholder="Seu nome completo">
+
+        <label for="email-modal">E-mail</label>
+        <input type="email" id="email-modal" placeholder="exemplo@email.com">
+
+        <h2>Segurança</h2>
+
+        <label for="senha-modal">Nova Senha</label>
+        <input type="password" id="senha-modal" placeholder="********">
+
+        <button type="submit">Salvar Todas as Alterações</button>
+    </div>
+  </div>
+
+  <script src="test.js"></script>
+</body>
+</html>

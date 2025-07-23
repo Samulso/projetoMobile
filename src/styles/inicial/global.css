@@ -1,0 +1,17 @@
+.button-02 {
+    display: flex;
+    border: none;
+    background-color: #2b565d;
+    color: white;
+    border-radius: 100px;
+    padding: 9px 30px;
+    position: relative;
+    left: 100px;
+    top: 45px;
+    font-size: 23px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-02:hover {
+    background-color: #1d393d;
+  }
