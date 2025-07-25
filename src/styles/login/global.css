@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: League Spartan;
+  
 }
 
 .button-01 {
@@ -28,5 +28,9 @@
 .button-01:hover {
     background-color: #113740;
     
+}
+
+.button-01, .title, .up-title, .input-field input, .input-field input::placeholder, .appName, .redirect-container{
+  font-family: League Spartan;
 }
 

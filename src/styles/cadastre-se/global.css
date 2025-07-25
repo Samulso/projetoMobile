@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: League Spartan;
 }
 
 .button-01 {
@@ -29,3 +28,6 @@
     
 }
 
+.button-01, .sub-title, .title, .input-field input, .input-field input::placeholder, .appName {
+  font-family: League Spartan;
+}

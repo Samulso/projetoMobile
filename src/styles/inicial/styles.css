@@ -134,9 +134,7 @@ nav {
     height: 80px;
     display: flex;
     background: #2b565d;
-    justify-content: center;
-    
-    
+    justify-content: center; 
 }
 
 nav ul{
