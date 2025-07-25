@@ -26,6 +26,7 @@ body {
     padding: 100px 0;
     z-index: 10;
     display: flex;
+
     flex-direction: column;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -43,6 +44,9 @@ body {
     margin-bottom: 50px;
     position: fixed;
     top: 30px;
+
+
+    
 }
 
 .item-image img {
@@ -227,3 +231,175 @@ nav ul li.active a .text {
     font-size: 24px;
     font-weight: 700;
 }
+
+.modal {
+    display: none;
+    position: fixed; /* Fixa na tela */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.4); /* fundo escuro */
+    align-items: center;
+    justify-content: center;
+}
+  
+.modal.active {
+    display: flex;
+}
+
+.modal-item-image img {
+    position: relative;
+    right: 120px;
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+
+}
+
+.modal-item-title {
+    font-size: 30px;
+    position: relative;
+    bottom: 140px;
+    left: 47px;
+}
+
+.modal-item-price {
+    font-size: 25px;
+    position: relative;
+    bottom: 140px;
+    left: 4px;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: auto; 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column; 
+    text-align: center; 
+    color: #292929;
+}
+
+.modal-close-btn {
+    color: #aaaaaa;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    color: #4c3000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #092a31;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.modal-content button {
+    margin-top: 25px;
+    background-color: #092a31;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 56px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s ease;
+    font-size: 16px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.modal-content button:hover {
+    background-color: #375057;
+}
+
+.form-agendamento label {
+    display: block;
+    margin-top: 15px;
+    gap: 20px;
+}
+
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.horarios {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.horarios button {
+    padding: 13px 16px;
+    border: none;
+    background: #cacaca;
+    color: #383838;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.floating-label {
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .floating-label input,
+  .floating-label select {
+    width: 100%;
+    padding: 16px 12px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: transparent;
+    outline: none;
+  }
+  
+  .floating-label label {
+    position: absolute;
+    top: -23px;
+    left: 12px;
+    color: #666;
+    font-size: 16px;
+    pointer-events: none;
+    background-color: #fff;
+    padding: 0 4px;
+    transition: 0.2s ease all;
+  }
+  
+  .floating-label input:focus + label,
+  .floating-label input:not(:placeholder-shown) + label,
+  .floating-label select:focus + label,
+  .floating-label select:valid + label {
+    top: -21px;
+    left: 10px;
+    font-size: 12px;
+    color: #2b565d;
+  }
